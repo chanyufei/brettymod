@@ -1,0 +1,26 @@
+---
+layout: index
+---
+    		<section id="intro">
+    			<div class="intro-container inner">     
+      				<section class="statement fadeInUp animated">
+        				<p>{{ site.description }}</p>
+					</section>
+   				 </div> <!-- .intro-container -->
+    		</section> <!-- #intro -->
+    		
+    		<section id="about" class="inner clearfix">
+    			<h2>About</h2>
+      			<div class="col col-two">
+					<div class="bio clearfix">
+          				{% include UserBio.html %}
+					</div>
+				</div>
+				
+				<div class="col col-one">
+        			<img src="http://www.gravatar.com/avatar/{{ site.gravatar_HASH }}?s=200" class="avatar"/>
+      			</div>
+      			<div class="elsewhere">
+        			{% include social.html %}
+      			</div>
+      		</section> <!-- #about --> 
