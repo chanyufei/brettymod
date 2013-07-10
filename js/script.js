@@ -28,21 +28,6 @@ $(window).bind('orientationchange', function(e){
   }
 });
 
-// JRIBBBLE https://github.com/tylergaw/jribbble
-
-$.jribbble.getShotsByPlayerId('gastonfig', function (playerShots) {
-	var html = [];
-	$.each(playerShots.shots, function (i, shot) {
-		html.push('<li><a href="' + shot.url + '" target="_blank"><h4>' + shot.title +'</h4><img src="' + shot.image_url + '" ');
-		html.push('alt="' + shot.title + '"></a></li>');
-	});
-		
-	$('#shotsByPlayerId').html(html.join(''));
-}, {page: 1, per_page: 9});
-
-
-//		html.push('<h4>by ' + shot.player.name + '</h4><a href="' + shot.url + '">');
-
 /* ================================= Smooth Scrolling from http://css-tricks.com/snippets/jquery/smooth-scrolling/#li-comment-94058 ================================= */
 
 $('a[href*=#]').click(function() {

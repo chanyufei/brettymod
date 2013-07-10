@@ -20,7 +20,11 @@
                     <p class="date"><span>Posted on {{ page.date | date_to_string }}</span></p>
                 </hgroup>
                 {{ content }}
-                <p>{{ site.user_name }} {{ page.date | date: "at %H:%M" }}</p>
+                {% if page.author %}
+                	<p>{{ page.author }} {{ page.date | date: "at %H:%M" }}</p>
+                {% else %}
+                	<p>{{ site.user_name }} {{ page.date | date: "at %H:%M" }}</p>
+                {% endif %}
  		</div> <!-- #wrapper -->
  		{% include footer.html %}
  		{% include script.html %}
