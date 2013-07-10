@@ -1,7 +1,7 @@
 Bretty
 ======
 
-A jekyll theme. [Want a demo? click and read instruction. :point_left:](http://ciel.im/Bretty)
+A jekyll theme. [Want a demo? click and read instruction. :point_left:](http://imwithye.github.io/Bretty)
 
 ![screenshot](https://raw.github.com/imwithye/Bretty/master/images/screenshot.jpg)
 
