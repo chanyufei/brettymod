@@ -3,7 +3,7 @@ Bretty
 
 A jekyll theme. [Want a demo? click and read instruction. :point_left:](http://ciel.im/Bretty)
 
-![screenshot](http://ciel.im/Bretty/images/screenshot.jpg)
+![screenshot](https://raw.github.com/imwithye/Bretty/master/images/screenshot.jpg)
 
 The theme is mobile optimised but I did not check browser compatibility. It looks great in Chrome, Safari and Firefox though.
 
