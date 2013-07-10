@@ -11,7 +11,9 @@ layout: archive
 			<span class="meta">{{ post.date | date_to_string }}</span>
 			<a href="{{ post.url }}">
 			<h3>{{ post.title }}</h3></a>
+			{% if post.description %}
 			<p>{{ post.description }}…<a href="{{ post.url }}">More</a></p>
+			{% endif %}
 			</li>
 			{% endfor %}
 		</ul>

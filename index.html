@@ -24,3 +24,48 @@ layout: index
         			{% include social.html %}
       			</div>
       		</section> <!-- #about --> 
+      		
+			<section id="contact" class="grey">
+    			<div class="inner clearfix">
+      			<h2>Get in Touch</h2>
+      			<p><span>Hi, I am {{ site.user_name }}</span>. If you want to work together, have any questions, or just want send off a compliment I would love to hear from you.</p>
+				<ul id="response">
+      			</ul>      
+      			<form action="javascript:sendMail()" method="post" class="clearfix">
+          			<fieldset class="col1">
+            		<label class="hidden" for="name">Your name</label>
+        			<input type="text" name="name" id="name" placeholder="Your name" />
+            		<label class="hidden" for="email">Your name</label>
+        			<input type="text" name="email" id="email" placeholder="Your email address" />
+          			</fieldset>
+
+          			<label class="hidden" for="comments">Your message...</label>
+          			<textarea name="comments" id="comments" placeholder="Your message..."></textarea>	
+
+      				<div class="button clearfix"><input type="submit" name="submit" id="submit" value="Send""/></div>
+      				<script>
+      					function sendMail(){
+      						var href="";
+    						var name = $('input#name').val();
+    						var email = $('input#email').val();
+    						var comments = $('textarea#comments').val();
+    						if(name==""){
+    							alert("Please leave your name.");
+    							return;
+    						}
+    						if(email.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) != -1){
+    							href = "mailto:" + "{{ site.email }}" + "?subject=" + "Hi, {{ site.user_name }}" + 
+    							"&body=" + comments + "%0A%0A" + name + "%0A" + email;
+    							window.location.replace(href);
+    							return;
+    						}
+    						else{
+    							alert("Please input correct email address.");
+    							return;
+    						}
+						}
+					</script>
+      			</form>    
+      
+   				 </div>
+  			</section> <!-- #contact -->
