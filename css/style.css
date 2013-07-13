@@ -1258,6 +1258,7 @@ section.current {
   list-style: none;
 }
 .blog-archive #main li {
+  font-family: "proxima-nova", helvetica, sans-serif;
   margin: 55px 0 76px 0;
 }
 .blog-archive #main li .meta {
@@ -1300,6 +1301,7 @@ body.work header {
   margin-bottom: 55px;
 }
 .post #main.inner {
+  font-family: "proxima-nova", helvetica, sans-serif;
   max-width: 31.25em;
 }
 body.post hgroup {
