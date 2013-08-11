@@ -165,6 +165,12 @@ h3 {
   margin-top: 24px;
   margin-bottom: 0px;
 }
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
 p,
 ul {
   margin-top: 0px;
@@ -172,7 +178,10 @@ ul {
 }
 small,
 aside {
-  font-size: 10px;
+  font-size: 12px;
+}
+.project {
+    font-size: 16px;
 }
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
@@ -304,13 +313,14 @@ nav ol {
  * 2. Improves image quality when scaled in IE 7.
  */
 img {
-  border: 0;
+  border: 1px solid black;
   /* 1 */
 
   -ms-interpolation-mode: bicubic;
   /* 2 */
 
 }
+
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
@@ -826,7 +836,7 @@ p {
 /* GLOBAL
 ----------------------------------------------- */
 body {
-  font-family: "ff-tisa-web-pro", georgia, serif;
+  font-family: Optima, Palatino, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 html,
@@ -1117,7 +1127,7 @@ section.current {
   text-transform: uppercase;
 }
 .avatar {
-  border-radius: 80px; 
+  border-radius: 0px; 
   margin: auto; 
   display: block; 
   margin: 10px auto 20px;

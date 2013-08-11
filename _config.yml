@@ -1,16 +1,15 @@
 #site conf
-title: Bretty
-description: <span>Bretty</span> is a simple and pretty <span>Jekyll</span> theme.
+title: Yufei Chen
+description: <span>Action</span> speak louder than words.
 
 #user profile
-user_name: Bretty
-twitter: twitter
-facebook: facebook
-github: github
-dribbble: dribbble
-email: me@example.com
+user_name: Yufei(Andy) Chen
+twitter: C_YF
+facebook: chanyufei
+github: chanyufei
+email: umche355@myumanitoba.ca
 
-gravatar_HASH: 205e460b479e2e5b48aec07710c08d50
+gravatar_HASH: dcf2fa54d9a15ac67000c4b71abc07e6
 
 
 pygments: true
